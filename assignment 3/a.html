@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Blog & Multiplication Table</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="nav">
+        <a onclick="showPage('home')">HOME</a>
+        <a onclick="showPage('blog')">BLOGS</a>
+    </div>
+
+    <div class="container" id="home">
+        <h2>Welcome to the Multiplication Table Generator</h2>
+        <input type="text" id="num" placeholder="Enter a number">
+        <button onclick="generateTable()">Generate Table</button>
+        <p id="error" style="color: red;"></p>
+        <div id="table"></div>
+    </div>
+
+    <div class="container" id="blog">
+        <h2>JavaScript Questions & Answers</h2>
+        <h3>1. What is the difference between let, const, and var?</h3>
+        <p><strong>var:</strong> Function-scoped, can be redeclared and updated.</p>
+        <p><strong>let:</strong> Block-scoped, cannot be redeclared but can be updated.</p>
+        <p><strong>const:</strong> Block-scoped, cannot be redeclared or updated.</p>
+        
+        <h3>2. What is the difference between find() and filter()?</h3>
+        <p><strong>find():</strong> Returns the first element that matches the condition.</p>
+        <p><strong>filter():</strong> Returns an array of all matching elements.</p>
+        
+        <h3>3. How do you select an element in the DOM using JavaScript?</h3>
+        <ul>
+            <li>document.getElementById('id')</li>
+            <li>document.querySelector('.class')</li>
+            <li>document.getElementsByClassName('className')</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 JavaScript Blog & Multiplication Table. All Rights Reserved.
+    </div>
+
+  <script src="a.js"></script>
+</body>
+</html>
